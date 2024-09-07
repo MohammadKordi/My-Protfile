@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+
+* {
+    font-family: "Inter",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #131313;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:white ;
+    font-family: "DM Sans", sans-serif;
+}
+
+p {
+    color: rgb(156, 156, 156);   
+}
+
+.lines span { /*  background عشان الخطوط الموجودة في ال */
+
+    position:fixed ;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: rgba(241, 241, 241, 0.05);
+    width: 1px;
+}
+
+.lines span:nth-child(1) {   /* عشان اخلي في مسافة بين كل خط   */
+    left: 10%;
+}
+.lines span:nth-child(2) {
+    left: 20%;
+}
+.lines span:nth-child(3) {
+    left: 30%;
+}
+.lines span:nth-child(4) {
+    left: 40%;
+}
+.lines span:nth-child(5) {
+    left: 50%;
+}
+.lines span:nth-child(6) {
+    left: 60%;
+}
+.lines span:nth-child(7) {
+    left: 70%;
+}
+.lines span:nth-child(8) {
+    left: 80%;
+}
+.lines span:nth-child(9) {
+    left: 90%;
+}
+
+
+/* Start Header */
+
+header {
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  padding: 15px 10px;
+  background-color:#171616;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo  {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+header nav .links {
+    display: flex;
+    gap: 40px;
+}
+
+header nav .links a {
+    color: rgb(239, 239, 239);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav .links a:hover {
+    color:rgb(142, 212, 37);
+}
+
+header nav .icons {
+    display: flex;
+    gap: 30px;
+}
+
+header nav .icons a {
+    color: rgb(142, 212, 37);
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+header nav .icons a:hover {
+   scale: 1.4;  /* عشان اكبر الايكون زي الفيس ,,, طبعا بتكون طبيعي قيمتها تساوي 1 */
+}
+
+
+/* Start Btns */
+
+.btns { /*  Here Me ,, Download Resume عشان اتحكم بال  */
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+}
+
+.btn {
+    background-color:  rgb(142, 212, 37);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #131313;
+    font-size: 20px;
+    margin-bottom: 3px ;  
+}
+
+.btn:hover {
+  background-color:  rgb(85, 138, 6);
+}
+
+.btn-download {
+    color: rgb(233, 233, 233);
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    color:  rgb(85, 138, 6);  
+}
+
+
+/* Start Hero */
+
+
+.hero {
+    padding-top: 100px;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero.div-text{
+    width: 50%;
+}
+.div-text span {
+    color:rgb(159, 216, 36); 
+}
+
+.hero .div-text h4{
+    font-size: 25px;
+   margin-bottom: 7px;
+}
+
+.hero .div-text p {
+    margin-bottom: 7px ;
+    font-size: 18px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.hero .div-imgs {
+    width: 85%;
+    position: relative;
+    border-radius: 0 0 400px 400px;
+    overflow: hidden;  
+}
+
+.hero .div-imgs .bg-img{
+    position: absolute;
+    bottom: 40px;
+    top: 20px;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* Start About*/
+
+section {
+    padding: 80px 0;
+}
+
+.about .container{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px;
+    padding: 50px;
+}
+
+.about .div-imgs {
+    width: 600px;
+   border-radius: 20px;
+}
+
+
+.about .div-text h5{
+    color:white ;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.about .div-text h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 7px 0 3px;
+}
+
+.about .div-text h4{
+    font-size: 15px;
+    margin-bottom: 17px;
+    line-height: 1.7;
+}
+
+.about .div-text p {
+    margin-bottom: 7px ;
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.7;
+}
+
+
+.about .div-text ul{
+    display: flex;
+    color: white;
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+}
+.about .div-text ul li{
+   width: 40%;
+   font-weight: bold;
+   display: flex;
+   gap: 10px;
+   margin-bottom: 30px;
+}
+
+.about .div-text ul li i{
+    color:rgb(159, 216, 36);
+}
+
+/* Start Servieces */
+
+.top-section {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.top-section h2 {
+    font-size: 30px;
+}
+
+.top-section h2 span {
+    color:rgb(142, 212, 37);
+}
+
+
+.servieces .boxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servieces .boxs .box {
+    width: 32%;
+    text-align: center;
+    padding: 50px 20px;
+    border: 1px solid rgb(79, 78, 78);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.servieces .boxs .box i {
+    color: rgb(142, 212, 37);
+    font-size: 70px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.servieces .boxs .box:hover i{
+    scale: 1.2;
+
+}
+
+.servieces .boxs .box h3 {
+    font-size: 25px;
+    margin-bottom: 20px;   
+}
+
+.servieces .boxs .box p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.servieces .boxs .box:hover {
+    border-color:  rgb(85, 138, 6);
+}
+
+/* Start Project */
+
+.projects .project-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.projects .project-box img {
+    width: 45%;
+    padding: 0 15px;
+}
+
+.projects .project-box .text {
+    margin-left: 100px;
+    width: calc(50%-100px);
+}
+
+.projects .project-box .text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.projects .project-box .text h4 span {
+    color: rgb(181, 241, 90);
+}
+
+.projects .project-box .text h3 a {
+    font-size: 30px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+
+.projects .project-box .text h3 a:hover{
+    color:  rgb(142, 212, 37);
+}
+
+.projects .project-box .text p {
+    margin: 30px 0 40px;
+    line-height: 1.8 ;
+}
+
+
+.projects .project-box .text .link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(142, 212, 37) ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(142, 212, 37);
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    rotate: 45deg; /* عشان اخلي السهم مايل */
+    transition: 0.5;
+}
+
+.projects .project-box .text .link:hover {
+    scale: 1.1;
+}
+
+.projects .project-box.project-box-2 {
+  flex-direction: row-reverse;
+}
+
+
+/* Start Contact */
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .top-section {
+    margin-bottom: 100px;
+}
+
+
+.contact .social-contact {
+    width: 30%;
+}
+
+.contact .social-contact h2 {
+    color:white;
+    margin-bottom: 40px;
+}
+
+.contact .social-contact h2 span {
+    color: rgb(142, 212, 37) ;
+}
+
+.contact .social-contact .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .social-contact .links a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;  
+}
+
+.contact .social-contact .links a i {
+    color: white;
+    margin-right: 7px;
+    width: 40px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    background-color: rgb(142, 212, 37);
+
+}
+
+.contact .social-contact .links a:hover {
+    left: 13px;
+}
+
+.contact form {
+    width: 60%;
+    text-align: center;
+}
+
+.contact form .inputs-form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .inputs-form input,
+.contact form .inputs-form textarea {
+    border-radius: 5px;
+    padding: 20px;
+    outline: none;
+    color: white;
+    margin: 0 10px 15px 0;
+    transition: 0.4;
+    background-color: rgb(45, 44, 44);
+    border: 1px solid rgb(93, 92, 92);
+}
+
+.contact form .inputs-form input {
+    width: 38% ;
+}
+
+.contact form .inputs-form textarea {
+    width: 100%;
+}
+
+.contact form .inputs-form input:hover{
+    border-color:  rgb(85, 138, 6);
+}
+
+.contact form .inputs-form textarea:hover {
+    border-color:  rgb(85, 138, 6);
+}
+
+.contact .btn {
+    outline: none;
+    padding: 15px 35px;
+    font-size: 20px;
+}
